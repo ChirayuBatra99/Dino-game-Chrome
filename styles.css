@@ -1,0 +1,57 @@
+.game{
+    width: 400px;
+    height: 150px;
+    border: 1px solid black;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.dino{
+    height: 50px;
+    width: 40px;
+    background-image: url('images/trex.png');
+    background-size: 50px 40px;
+    position: relative;
+    top: 100px;
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump{
+    0% {
+        top: 100px;
+    }
+    25%{
+        top: 50px;
+    }
+    50%{
+        top: 20px;
+    }
+    75%{
+        top: 50px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+
+.cactus{
+    width: 30px;
+    height: 40px;
+    background-image: url('images/cactus.png');
+    background-size: 40px 30px;
+    position: absolute;
+    top: 110px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{
+        left: 370px;
+    }
+    100%{
+        left: -20px;
+    }
+}
